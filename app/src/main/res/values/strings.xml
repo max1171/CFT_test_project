@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">CFT_test_project</string>
+    <string name="scheme_network_name">SCHEME / NETWORK</string>
+    <string name="brand_name">BRAND</string>
+    <string name="card_number_name">CARD NUMBER</string>
+    <string name="length_name">LENGTH</string>
+    <string name="luhn_name">LUHN</string>
+    <string name="type_name">TYPE</string>
+    <string name="prepaid_name">PREPAID</string>
+    <string name="country_name">COUNTRY</string>
+    <string name="bank_name">BANK</string>
+    <string name="date_query_name">Дата запроса:</string>
+    <string name="bin_name">BIN:</string>
+    <string name="link">http://www.google.com</string>
+    <string name="edit_bin_hint">Введите от 4 до 6 символов</string>
+</resources>

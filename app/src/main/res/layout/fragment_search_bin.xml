@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edit_bin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:inputType="number"
+        android:maxLength="6"
+        android:hint="@string/edit_bin_hint"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/scheme_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/scheme_network_name"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_bin"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/scheme_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scheme_name"
+        tools:text="Visa" />
+
+    <TextView
+        android:id="@+id/brand_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/brand_name"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scheme_data"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/brand_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/brand_name"
+        tools:text="Platinum" />
+
+    <TextView
+        android:id="@+id/card_number_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/card_number_name"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/brand_data"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/length_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/length_name"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_number_name"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/length_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/length_name"
+        tools:ignore="SmallSp"
+        tools:text="16" />
+
+    <TextView
+        android:id="@+id/luhn_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/luhn_name"
+        android:textSize="8sp"
+        app:layout_constraintLeft_toRightOf="@+id/length_name"
+        app:layout_constraintTop_toBottomOf="@+id/card_number_name"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/luhn_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/length_name"
+        app:layout_constraintTop_toBottomOf="@+id/luhn_name"
+        tools:ignore="SmallSp"
+        tools:text="YES" />
+
+    <TextView
+        android:id="@+id/type_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/type_name"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toRightOf="@+id/scheme_name"
+        app:layout_constraintTop_toBottomOf="@+id/edit_bin"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/type_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/type_name"
+        app:layout_constraintTop_toBottomOf="@+id/type_name"
+        tools:text="Debit" />
+
+    <TextView
+        android:id="@+id/prepaid_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/prepaid_name"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/type_name"
+        app:layout_constraintTop_toBottomOf="@+id/type_data"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/prepaid_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/type_name"
+        app:layout_constraintTop_toBottomOf="@+id/prepaid_name"
+        tools:text="No" />
+
+    <TextView
+        android:id="@+id/country_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/country_name"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/type_name"
+        app:layout_constraintTop_toBottomOf="@+id/prepaid_data"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/country_data"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:autoLink="all"
+        android:clickable="true"
+        android:ellipsize="end"
+        android:lines="2"
+        android:maxLines="2"
+        android:textColor="#FF03DAC5"
+        
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/type_name"
+        app:layout_constraintTop_toBottomOf="@+id/country_name"
+        tools:text="Russian Federation" />
+
+    <TextView
+        android:id="@+id/bank_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/bank_name"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toRightOf="@+id/type_name"
+        app:layout_constraintTop_toBottomOf="@+id/edit_bin"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/bank_name_data"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/bank_name"
+        app:layout_constraintTop_toBottomOf="@+id/bank_name"
+        tools:text="SBERBANK OF RUSSIA" />
+
+    <TextView
+        android:id="@+id/bank_url_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:autoLink="web"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/bank_name"
+        app:layout_constraintTop_toBottomOf="@+id/bank_name_data"
+        tools:text="www.sbrf.ru" />
+
+    <TextView
+        android:id="@+id/bank_phone_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:autoLink="phone"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/bank_name"
+        app:layout_constraintTop_toBottomOf="@+id/bank_url_data"
+        tools:text="+7 (495) 500 5550" />
+
+    <ProgressBar
+        android:id="@+id/progress_Bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"
+        />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/length_data">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scrollbars="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:reverseLayout="false"
+            tools:listitem="@layout/query_bin_item" />
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
